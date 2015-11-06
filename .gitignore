@@ -41,3 +41,20 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+*.dll
+*.cache
+*.pdb
+
+packages/
+Ementor.Application/bin/
+Ementor.Application/obj/
+Ementor.Core/bin/
+Ementor.Core/obj/
+Ementor.EntityFramework/bin/
+Ementor.EntityFramework/obj
+Ementor.Web/bin/
+Ementor.Web/obj/
+Ementor.WebApi/bin/
+Ementor.WebApi/obj/
+
+*.nupkg
