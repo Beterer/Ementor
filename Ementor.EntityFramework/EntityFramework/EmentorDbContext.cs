@@ -13,7 +13,7 @@ namespace Ementor.EntityFramework
     {
         //TODO: Define an IDbSet for your Entities...
         public IDbSet<Class> Classes { get; set; }
-        //public IDbSet<Atendee> Atendees { get; set; }
+        public IDbSet<Atendee> Atendees { get; set; }
 
         /* NOTE: 
          *   Setting "Default" to base class helps us when working migration commands on Package Manager Console.

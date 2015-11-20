@@ -27,7 +27,12 @@
                     url: '/about',
                     templateUrl: '/App/Main/views/about/about.cshtml',
                     menu: 'About' //Matches to name of 'About' menu in EmentorNavigationProvider
-                });
+                })
+                .state('classlist', {
+                    url: '/list',
+                    templateUrl: '/App/Main/views/class/list.cshtml',
+                    menu: 'ClassList' //Matches to name of 'ClassList' menu in EmentorNavigationProvider
+            });
         }
     ]);
 })();

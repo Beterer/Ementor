@@ -1,4 +1,5 @@
 ﻿using Abp.Domain.Entities;
+using Ementor.Classes;
 using Ementor.Users;
 using System;
 using System.Collections.Generic;
@@ -10,7 +11,8 @@ namespace Ementor.Atendeees
 {
     public class Atendee : Entity
     {
-        public virtual User User {get; set;}
+        public virtual User User { get; set; }
+        public virtual Class Class { get; set; }
         public virtual AtendeeType Type { get; set; }
     }
 }

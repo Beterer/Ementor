@@ -44,10 +44,10 @@ namespace Ementor.Web
                         "~/Scripts/others/spinjs/spin.js",
                         "~/Scripts/others/spinjs/jquery.spin.js",
 
-                        "~/Scripts/angular.min.js",
+                        "~/Scripts/angular.js",
                         "~/Scripts/angular-animate.min.js",
                         "~/Scripts/angular-sanitize.min.js",
-                        "~/Scripts/angular-ui-router.min.js",
+                        "~/Scripts/angular-ui-router.js",
                         "~/Scripts/angular-ui/ui-bootstrap.min.js",
                         "~/Scripts/angular-ui/ui-bootstrap-tpls.min.js",
                         "~/Scripts/angular-ui/ui-utils.min.js",

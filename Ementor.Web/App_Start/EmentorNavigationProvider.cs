@@ -28,6 +28,13 @@ namespace Ementor.Web
                         url: "#/about",
                         icon: "fa fa-info"
                         )
+                ).AddItem(
+                    new MenuItemDefinition(
+                        "ClassList",
+                        new LocalizableString("ClassList", EmentorConsts.LocalizationSourceName),
+                        url: "#/list",
+                        icon: "fa fa-home"
+                        )
                 );
         }
     }

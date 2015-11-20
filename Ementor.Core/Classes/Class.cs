@@ -11,7 +11,6 @@ namespace Ementor.Classes
 {
     public class Class : Entity
     {
-        public virtual List<Atendee> Atendees { get; set; }
         public virtual ClassCategory Category { get; set; }
         public virtual DateTime DateTime { get; set; }
         public virtual ClassStatus Status { get; set; }
