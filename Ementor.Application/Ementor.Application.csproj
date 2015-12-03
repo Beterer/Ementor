@@ -94,9 +94,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AutoMapperConfiguration.cs" />
     <Compile Include="Classes\ClassAppService.cs" />
-    <Compile Include="Classes\Dtos\ClassDto.cs" />
-    <Compile Include="Classes\Dtos\GetAllClassesOutput.cs" />
+    <Compile Include="Classes\Dtos\GetClassOutput.cs" />
     <Compile Include="Classes\IClassAppService.cs" />
     <Compile Include="EmentorApplicationModule.cs" />
     <Compile Include="EmentorAppServiceBase.cs" />

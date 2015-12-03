@@ -1,10 +1,13 @@
 ﻿<div class="panel panel-default" ng-controller="eMentor.views.class.list as vm" data-ng-init="init()">
+    {{vm.class}}
     <ul class="list-group" ng-repeat="class in vm.classes">
         <div class="list-group-item">
             <span>
-                {{class.CategoryId}}
-                {{class.Status}}
-                {{class.Date}}
+                {{class.categoryName}}
+                {{class.domainName}}
+                {{class.dateTime}}
+                {{class.status}}
+                {{class.description}}
             </span>
         </div>
     </ul>

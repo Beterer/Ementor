@@ -7,21 +7,34 @@ using System.Threading.Tasks;
 using Ementor.Classes.Dtos;
 using AutoMapper;
 using Abp.Domain.Repositories;
+using Abp.AutoMapper;
 
 namespace Ementor.Classes
 {
+    //TODO: use automapper
+    //TODO: make all this async
     public class ClassAppService : ApplicationService, IClassAppService
     {
         //private readonly IClassRepository _classRepository;
         private readonly IRepository<Class> _classRepository;
-        public GetAllClassesOutput GetClasses()
+        public async Task<List<GetClassOutput>> GetClasses()
         {
-            var classes = _classRepository.GetAll();
+            var allClasses = await _classRepository.GetAllListAsync();
+            var output = new List<GetClassOutput>();
 
-            return new GetAllClassesOutput
+            foreach (var clas in allClasses)
             {
-                Classes = Mapper.Map<List<Class>>(classes)
-            };
+                output.Add(AutoMapperConfiguration.MapClass(clas));
+            }
+            
+            return output;
+        }
+        public async Task <GetClassOutput> GetClass(int classId = 1)
+        {
+            var clas = await _classRepository.GetAsync(classId);
+            var output = AutoMapperConfiguration.MapClass(clas);
+
+            return output;
         }
 
         public ClassAppService(IRepository<Class> classRepository)

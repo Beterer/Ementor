@@ -14,5 +14,6 @@ namespace Ementor.Classes
         public virtual ClassCategory Category { get; set; }
         public virtual DateTime DateTime { get; set; }
         public virtual ClassStatus Status { get; set; }
+        public virtual string Description { get; set; }
     }
 }

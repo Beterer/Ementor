@@ -9,16 +9,24 @@
 
             vm.localize = abp.localization.getSource('Ementor');
 
-            vm.classes = [];
+            vm.classes = undefined;
+            vm.class = undefined;
 
             vm.setClasses = function () {
                 classService.getClasses().success(function (data) {
-                    vm.classes = data.classes;
+                    vm.classes = data;
+                })
+            };
+
+            vm.setClass = function () {
+                classService.getClass(1).success(function (data) {
+                    vm.class = data;
                 })
             };
 
             $scope.init = function () {
                 vm.setClasses();
+                vm.setClass();
             }
         }
     ]);

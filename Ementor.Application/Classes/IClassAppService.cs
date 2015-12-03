@@ -10,6 +10,7 @@ namespace Ementor.Classes
 {
     public interface IClassAppService : IApplicationService
     {
-        GetAllClassesOutput GetClasses();
+        Task <List<GetClassOutput>> GetClasses();
+        Task <GetClassOutput >GetClass(int classId);
     }
 }
