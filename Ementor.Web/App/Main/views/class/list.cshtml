@@ -1,5 +1,5 @@
 ﻿<div class="panel panel-default" ng-controller="eMentor.views.class.list as vm" data-ng-init="init()">
-    {{vm.class}}
+    @*{{vm.class}}
     <ul class="list-group" ng-repeat="class in vm.classes">
         <div class="list-group-item">
             <span>
@@ -10,5 +10,16 @@
                 {{class.description}}
             </span>
         </div>
-    </ul>
+    </ul>*@
+    <mwl-calendar view="vm.calendarView"
+                  current-day="vm.calendarDay"
+                  events="vm.events"
+                  view-title="vm.calendarTitle"
+                  on-event-click="vm.eventClicked(calendarEvent)"
+                  edit-event-html="'<i class=\'glyphicon glyphicon-pencil\'></i>'"
+    delete-event-html="'<i class=\'glyphicon glyphicon-remove\'></i>'"
+    on-edit-event-click="eventEdited(calendarEvent)"
+    on-delete-event-click="eventDeleted(calendarEvent)"
+    cell-is-open="true">
+</mwl-calendar>
 </div>

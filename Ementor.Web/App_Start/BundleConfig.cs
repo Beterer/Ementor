@@ -19,7 +19,9 @@ namespace Ementor.Web
                         "~/Content/toastr.min.css",
                         "~/Scripts/sweetalert/sweet-alert.css",
                         "~/Content/flags/famfamfam-flags.css",
-                        "~/Content/font-awesome.min.css"
+                        "~/Content/font-awesome.min.css",
+
+                        "~/Content/angular-bootstrap-calendar.min.css"
                     )
                 );
 
@@ -58,7 +60,9 @@ namespace Ementor.Web
                         "~/Abp/Framework/scripts/libs/abp.blockUI.js",
                         "~/Abp/Framework/scripts/libs/abp.spin.js",
                         "~/Abp/Framework/scripts/libs/abp.sweet-alert.js",
-                        "~/Abp/Framework/scripts/libs/angularjs/abp.ng.js"
+                        "~/Abp/Framework/scripts/libs/angularjs/abp.ng.js",
+
+                        "~/Scripts/angular-bootstrap-calendar-tpls.min.js"
                     )
                 );
 

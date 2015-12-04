@@ -9,6 +9,9 @@
         'ui.bootstrap',
         'ui.jq',
 
+        'mwl.calendar',
+        //'ngTouch',
+
         'abp'
     ]);
 
