@@ -21,11 +21,11 @@ namespace Ementor
         {
             var output = new GetClassOutput
             {
-                CategoryName = clas.Category.Name,
-                DomainName = clas.Category.Domain.Name,
-                DateTime = clas.DateTime.ToShortDateString(),
-                Status = clas.Status.ToString(),
-                Description = clas.Description
+                Title = String.Format("{0} {1}", clas.Category.Name, clas.Description),
+                Type = clas.StartsAt < DateTime.Now ? "special" :
+                        clas.Status == ClassStatus.Confirmed ? "success" : "warning",
+                StartsAt = clas.StartsAt,
+                EndsAt = clas.StartsAt.AddMinutes(clas.Minutes)
             };
 
             return output;

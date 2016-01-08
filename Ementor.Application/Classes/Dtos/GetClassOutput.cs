@@ -9,10 +9,9 @@ namespace Ementor.Classes.Dtos
 {
     public class GetClassOutput
     {
-        public string CategoryName { get; set; }
-        public string DomainName { get; set; }
-        public string DateTime { get; set; }
-        public string Status { get; set; }
-        public string Description { get; set; }
+        public string Title { get; set; }
+        public DateTime StartsAt { get; set; }
+        public DateTime EndsAt { get; set; }
+        public string Type { get; set; }
     }
 }

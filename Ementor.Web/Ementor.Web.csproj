@@ -272,6 +272,7 @@
     </Content>
     <Content Include="App\Main\services\appSession.js" />
     <Content Include="App\Main\views\class\list.js" />
+    <Content Include="App\Main\views\class\modalTestTemplate.html" />
     <Content Include="App\Main\views\layout\header.js" />
     <Content Include="App\Main\views\layout\layout.js" />
     <Content Include="App\Main\views\home\home.js" />
